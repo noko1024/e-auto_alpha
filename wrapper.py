@@ -109,6 +109,8 @@ def Main():
         num = input(">")
         if num.isdecimal() and re.fullmatch("[1-5]",num) is not None:
             if num == "1":
+                #非推奨
+                __import__("e-auto").main()
                 break
             if num == "2":
                 print("環境の構築を開始します。")
